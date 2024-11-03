@@ -20,7 +20,7 @@ if (isset($_POST['deleteBakeryBtn'])) {
     $query = deleteBakery($pdo, $_GET['bakeryID']);
 
     if ($query) {
-        header("Location: ../index.php");
+        header("Location: ../login.php");
         exit(); // Always use exit after header redirection
     } else {
         echo "Deletion Failed";

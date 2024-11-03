@@ -80,6 +80,6 @@ if(!isset($_SESSION['bakeryID']) || !isset($_SESSION['username'])) {
     </table>
 
     <input type="submit" value="Edit Profile" onclick="window.location.href='editbakery.php?bakeryID=<?php echo $userData['bakeryID']; ?>';">
-        
+    <input type="submit" value="Delete Account" onclick="window.location.href='deletebakery.php?bakeryID=<?php echo $userData['bakeryID']; ?>';">   
     </body>
 </html>
